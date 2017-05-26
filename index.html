@@ -29,10 +29,17 @@
             border-color:#ffe6e6;
             box-shadow:none;
         }
-        #testimonial{
+        #infocon{
+            background-color: #ffe6e6;
+            border-radius: 10px;
+        }
+        #pinfo{
             display:inline-block;
             text-align: center;
-            width: 200px;
+            width: 250px;
+        }
+        #info-list{
+            text-align: left;
         }
         #Smedia{
             padding-top: 10px;
@@ -40,6 +47,14 @@
             padding-left: 5px;
             width: 40px;
             height: 40px;
+        }
+        #pkg{
+            width: 100%;
+        }
+        #footer{
+            width: 100%;
+            height: 40px;
+            background-color: black;
         }
     </style>
 </head>
@@ -90,32 +105,52 @@
         </div>
     </center>
     
-<div class="container">
+<div id="pkg" class="container">
     <center>
-        <div style="float: left;">
+        <div id="infocon" style="float: left; padding-left: 110px;">
             <h1>A La Carte Packages</h1>
-            <div id="testimonial" class="starter-template">
-                <h1>Hello, world!</h1>
-                <p></p></div>
-            <div id="testimonial" class="starter-template">
-                <h1>Hello, world!</h1>
-                <p></p></div> 
+            <div id="pinfo" style="float: left;" class="starter-template">
+                <h1 id="info-list">Engagement Session</h1>
+                <ul id="info-list">
+                    <li>Up to two hours of shoot time</li>
+                    <li>Unlimited outfit changes</li>
+                    <li>Up to three locations</li>
+                </ul></div>
+            <div id="pinfo" style="float: right;"class="starter-template">
+                <h1 id="info-list">Bridal Session</h1>
+                <ul id="info-list">
+                    <li>Up to two hours of shoot time</li>
+                    <li>Up to three locations</li>
+                </ul></div>
         </div>
     
-        <div style="float: right;">
+        <div id="infocon" style="float: right; padding-right: 50px;">
             <h1>Wedding Packages</h1>
-            <div id="testimonial" class="starter-template">
-                <h1>Hello, world!</h1>
-                <p></p></div>
-            <div id="testimonial" class="starter-template">
-                <h1>Hello, world!</h1>
-                <p></p></div> 
-            <div id="testimonial" class="starter-template">
-                <h1>Hello, world!</h1>
-                <p></p></div>
+            <div id="pinfo" style="float: left" class="starter-template">
+                <h1 id="info-list">Lace Wedding Package</h1>
+                <ul id="info-list">
+                    <li>Coverage includes only ceremony and reception</li>
+                    <li>Up to four hours of shoot time</li>
+                    <li>Perfect for small weddings!</li>
+                </ul></div>
+            <div id="pinfo" class="starter-template">
+                <h1 id="info-list">Satin Wedding Package</h1>
+                <ul id="info-list">
+                    <li>Up to two hours of pre-ceremony coverage, six hours of total coverage</li>
+                    <li>Nonstop coverage during ceremony and reception</li>
+                    <li>The perfect "happy medium" package for anyone!</li>
+                </ul></div>
+            <div id="pinfo" style="float: right" class="starter-template">
+                <h1 id="info-list">Silk Wedding Package</h1>
+                <ul id="info-list">
+                    <li>All day coverage for anything desired</li>
+                    <li>No limit on shoot time of pre-ceremony-reception</li>
+                    <li>Includes a 2 hour engagement session</li>
+                </ul></div>
             </div>
     </center>
-</div>
+    </div>
+    <div id="footer"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
