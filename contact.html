@@ -25,22 +25,11 @@
             font-weight: bold;
             color: grey;
         }
-        input, label, textarea{
-            font-size: 25px;
-            font-family: 'Clicker Script', cursive;
-            font-weight: bold;
-            color: grey;
-        }
         .navbar-default{
             background:#ffe6e6;
             background-image:none;
             border-color:#ffe6e6;
             box-shadow:none;
-        }
-        #testimonial{
-            display:inline-block;
-            text-align: center;
-            width: 350px;
         }
         #Smedia{
             padding-top: 10px;
@@ -56,17 +45,12 @@
             bottom: 0;
             position: fixed;
         }
-        ::-webkit-input-placeholder {
-            color: lightgray;
-        }
-        ::-moz-placeholder {
-            color: lightgray;
-        }
-        :-ms-input-placeholder {
-            color: lightgray;
-        }
-        :-moz-placeholder {
-            color: lightgray;
+        #conblock{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border-radius: 10px;
+            background-color: #f4c6cc;
         }
     </style>
 </head>
@@ -81,7 +65,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a style="font-size: 60px; margin-left: -100px; float: left;" class="navbar-brand" href="index.html">JB PHOTOS</a>
+                <a style="font-size: 60px; margin-left: -100px; float: left;" class="navbar-brand" href="index.html">Jbphotos</a>
             </div>
             <div style="float:right; margin-right: -100px" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav barti">
@@ -100,21 +84,11 @@
         <center><h1 style="font-size: 75px;">Contact Me!</h1></center>
     </div>
 <center>
-    <form style="width: 25%; padding-bottom: 10px;" action="" method="POST" enctype="multipart/form-data">
-        <div class="row">
-            <label for="name">Your Name:</label><br/>
-            <input id="name" class="input" name="name" type="text" value="" size="30" placeholder="First and Last Name"/><br/>
-        </div>
-        <div class="row">
-            <label for="email">Your Email Address:</label><br/>
-            <input id="email" class="input" name="email" type="text" value="" size="30" placeholder="Email Address"/><br/>
-        </div>
-        <div class="row">
-            <label for="message">Your Message:</label><br/>
-            <textarea id="message" class="input" name="message" placeholder="Type your message here"rows="7" cols="30"></textarea><br/>
-        </div>
-        <input id="submit_button" type="submit" value="Submit"/>
-    </form>
+    <div style="width: 75%; height: 300px; padding-top: 50px;">
+        <div style="float: left;"id="conblock"></div>
+        <div id="conblock"></div>
+        <div style="float: right; margin-top: -300px"id="conblock"></div>
+    </div>
 </center>
 
     <div id="footer">
