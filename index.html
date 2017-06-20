@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="">
+    
+    <!--------------------------------------------------------------------Header----------------------------------------------------------------------->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Home</title>
+</head>
     
     <!---------------------------------------------------------------Stylesheet Links------------------------------------------------------------------>
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+    
+    <!-----------------------------------------------------------------CSS Styles---------------------------------------------------------------------->
     <style>
         body{
             padding-top:50px;
@@ -75,17 +80,18 @@
         }
         #footer{
             width: 100%;
-            height: 60px;
+            height: 40px;
             background-color: black;
         }
     </style>
-</head>
-
-<body> 
-    <!--------------------------------------------------------------------Navbar-------------------------------------------------------------------->
+    
+    <!--------------------------------------------------------------------Body---------------------------------------------------------------------->
+<body>
+    
+    <!--Navbar-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         
-        <!--Manual Alignment of Navbar between page transitions-->
+        <!--Navbar Container-->
         <div style="padding-right: 6px;" class="container">
             <div style="padding-left: 8.5px;" class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -96,32 +102,29 @@
                 </button>
                 <a style="font-size: 60px; margin-left: -100px; float: left;" class="navbar-brand" href="index.html">Jbphotos</a>
             </div>
-            
             <!--Navbar Buttons-->
             <div style="float:right; margin-right: -100px" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav barti">
                     <li class="active"><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT ME</a></li>
                     <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html">GALLERY
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">   
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html">GALLERY<span class="caret"></span></a>
+                <!--Navbar Dropdown-->
+                <ul class="dropdown-menu">   
                     <li><a href="gal_portraits.html">Portraits</a></li>
                     <li><a href="gal_seniors.html">Seniors</a></li>
                     <li><a href="gal_weddings.html">Weddings</a></li>
-                    </ul>
-                    </li>    
+                </ul>   
                     <li><a href="contact.html">CONTACT</a></li>
-                    <li><img id="Smedia" src="StyleImages/FB.png"></li>
-                    <li><img id="Smedia" src="StyleImages/IG.png"></li>
+                    <li style="margin-top: -10px;"><a id="Smedia" href="https://www.facebook.com/Jbphotos225/"><img id="Smedia" src="StyleImages/FB.png"></a></li>
+                    <li style="margin-top: -10px;"><a id="Smedia" href="https://www.instagram.com/jbphotos__/?hl=en"><img id="Smedia" src="StyleImages/IG.png"></a></li>
                 </ul>
             </div>
-            <!--.nav-collapse -->
         </div>
     </nav>
     
     <center> 
-    <!--------------------------------------------------------------------Carousel------------------------------------------------------------------>
+    <!--------------------------------------------------------------------Carousel-------------------------------------------------------------------->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -129,11 +132,13 @@
                 <li data-target="#myCarousel" data-slide-to="1" class=""></li>
                 <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
             </ol>
+            <!--Images and Dimmensions-->
             <div class="carousel-inner" role="listbox">
                 <div class="item"><img id="cimg" class="first-slide" style="height: 600px; width: 90%;"src="StyleImages/p1.jpg"></div>
                 <div class="item active left"><img id="cimg" class="second-slide" style="height: 600px; width: 90%;"src="StyleImages/p2.jpg"></div>
                 <div class="item next left"><img id="cimg" class="third-slide" style="height: 600px; width: 90%;"src="StyleImages/p3.jpg"></div>
             </div>
+            <!--Carousel Controls-->
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span></a>
@@ -165,9 +170,9 @@
                 <ul id="info-list">
                     <li>Up to two hours of shoot time</li>
                     <li>Up to three locations</li>
-                </ul></div>
+                </ul>
+            </div>
         </div>
-    
         <div id="infocon" style="float: right; padding-right: 50px;">
             <h1 id="title">Wedding Packages</h1>
             <div id="pinfo" style="float: left" class="starter-template">
@@ -176,31 +181,36 @@
                     <li>Coverage includes only ceremony and reception</li>
                     <li>Up to four hours of shoot time</li>
                     <li>Perfect for small weddings!</li>
-                </ul></div>
+                </ul>
+            </div>
             <div id="pinfo" class="starter-template">
                 <h1 style="font-size: 30px" id="info-list"><u>Satin Wedding Package</u></h1>
                 <ul id="info-list">
                     <li>Up to two hours of pre-ceremony coverage, six hours of total coverage</li>
                     <li>Nonstop coverage during ceremony and reception</li>
                     <li>The perfect "happy medium" package for anyone!</li>
-                </ul></div>
+                </ul>
+            </div>
             <div id="pinfo" style="float: right" class="starter-template">
                 <h1 style="font-size: 30px" id="info-list"><u>Silk Wedding Package</u></h1>
                 <ul id="info-list">
                     <li>All day coverage for anything desired</li>
                     <li>No limit on shoot time of pre-ceremony-reception</li>
                     <li>Includes a 2 hour engagement session</li>
-                </ul></div>
+                </ul>
             </div>
+        </div>
     </center>
     
     <!----------------------------------------------------------------------Footer----------------------------------------------------------------------->
     </div>
-    <div id="footer">
-        <center><img id="Smedia" src="StyleImages/FB2.png">
-            <img id="Smedia" src="StyleImages/IG2.png"></center>
+    <div style="padding-left: 17px;" id="footer">
+        <center>
+            <a id="Smedia" href="https://www.facebook.com/Jbphotos225/"><img id="Smedia" src="StyleImages/FB2.png"></a>
+            <a id="Smedia" href="https://www.instagram.com/jbphotos__/?hl=en"><img id="Smedia" src="StyleImages/IG2.png"></a>
+        </center>
     </div>
-
+    <!------------------------------------------------------------------Imported Scripts------------------------------------------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
